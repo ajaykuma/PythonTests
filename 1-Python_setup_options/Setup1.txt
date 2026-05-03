@@ -1,6 +1,4 @@
---Working with python virtual environment.
-
---If python not installed
+##If python not installed
 https://www.python.org/downloads/windows/
 or follow instructions from here
 https://www.digitalocean.com/community/tutorials/install-python-windows-10
@@ -11,12 +9,13 @@ To check python path
 shows
 C:\Users\Ajay kumar\AppData\Local\Microsoft\WindowsApps\python.exe
 
-or start python
+#Make sure python path is set in environment, system variables.
+
+or start python by typing in python in CMD
 >>> import os,sys
 >>> os.path.dirname(sys.executable)
 
-Make sure python path is set in environment, system variables.
-
+##Working with python virtual environment.
 Reference link: https://docs.python.org/3/library/venv.html
 
 #Virtual environment - A self-contained location that enables you to maintain separate and isolated environments for python projects.
@@ -57,7 +56,7 @@ C:\PythonWork> dir/p
                2 Dir(s)  327,282,192,384 bytes free
 
 --activate virtual environment
-C:\PythonWork>myenv\Scripts\activate.bat
+C:\PythonWork>myenv\Scripts\activate
 
 --shows name of environment as prefix
 (myenv) C:\PythonWork>
@@ -70,6 +69,9 @@ ls
 --to deactivate
 (myenv) C:\PythonWork>deactivate
 C:\PythonWork>
+
+#Install pip
+https://pip.pypa.io/en/stable/installation/
 
 --to install packages, pip program ie 'preferred installer program'
 --to list packages installed
@@ -155,7 +157,7 @@ C:\>cd PythonWork_as_se
 
 C:\PythonWork_as_se>python -m venv myenv_se
 
-C:\PythonWork_as_se>myenv_se\Scripts\activate.bat
+C:\PythonWork_as_se>myenv_se\Scripts\activate
 
 --being in environment 'myenv_se'
 
@@ -187,6 +189,8 @@ urllib3            2.2.3
 Tips:
 --create virtual env in a specific directory
 --dont put any custom code inside venv directory instead keep it side by side
+
+
 
 
 

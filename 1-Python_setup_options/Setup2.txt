@@ -23,9 +23,8 @@ we can then create a virtual environment and let our project use it.
 
 in app.py
 
-import sys
-print(sys.path)
-
+    import sys
+    print(sys.path)
 
 Open a terminal while being within project folder
 PS C:\Users\Ajay kumar\Downloads\Mytestproject>
@@ -53,7 +52,7 @@ Python 3.8.0
 PS C:\Users\Ajay kumar\Downloads\Mytestproject> .\myprojenv\Scripts\python.exe -V
 Python 3.8.0
 
-C:\Users\Ajay kumar\Downloads\Mytestproject>myprojenv\Scripts\activate.bat
+C:\Users\Ajay kumar\Downloads\Mytestproject>myprojenv\Scripts\activate
 
 (myprojenv) C:\Users\Ajay kumar\Downloads\Mytestproject>pip list
 Package    Version
@@ -123,7 +122,7 @@ C:\Users\Ajay kumar\AppData\Local\Programs\Microsoft VS Code\bin
 (myprojenv) C:\Users\Ajay kumar\Downloads\Mytestproject>notepad app2.py
 
 in app2.py 
-[import pandas]
+ import pandas
 
 (myprojenv) C:\Users\Ajay kumar\Downloads\Mytestproject>python app2.py
 Traceback (most recent call last):

@@ -1,0 +1,74 @@
+#After installing python, pip and creating virtual env (optional but recommended)
+
+--Working with Python
+
+#Option 1
+#Using Python interpreter/shell
+
+CMD > python
+--test code
+--quit()
+
+#Option 2
+#Writing code in files
+Option1: create file > CMD notepad Test1.py
+ in Test1.py
+
+ x = 'welcome'
+ print(x)
+
+from your CMD > python Test1.py
+
+Option3: Python IDE (PyCharm or Visual studio code)
+--This can use native python environment and all packages installed
+--ctrl+shift+p > select Python Interpreter > <your python version>
+               > if using venv as created earlier > select virtual environment
+
+Option4: Working with jupyterlab or jupyter-notebook
+#in Native environment (python packages installed using pip in your machine)
+
+CMD> 
+ 
+  pip install jupyterlab
+  pip install jupyter-notebook
+  pip list
+--Launch jupyter-lab or jupyter-notebook
+
+#in Virtual environment
+
+CMD>
+
+  mkdir Project1
+  cd Project1
+  python -m venv project1
+  cd project1
+  cd Scripts
+        >activate
+        >cd ..
+        >cd ..
+  Now it must show > 
+  (project1) D:\Downloads\Project1>pip install jupyter ipykernel
+  (project1) D:\Downloads\Project1>pip install jupyterlab
+  (project1) D:\Downloads\Project1>pip install jupyter-notebook
+  (project1) D:\Downloads\Project1>python -m ipykernel install --user --name=project1 --display-name "Python (myenv)"
+  (project1) D:\Downloads\Project1>jupyter-notebook
+  --This should launch notebook within virtual environment
+
+Option5: Using Cloud Platforms : GCP/Azure/Databricks/AWS 
+
+--Google Cloud (gives 300$ free credit)
+cloud.google.com > create free account > VERTEX AI (earlier) > colab Enterprise > create notbeook
+                                       > Agent Platform (Now) > colab Enterprise > create notbeook
+
+--Databricks (gives 400$ free credit)
+https://community.cloud.databricks.com/login.html > create account > explore by using Notebooks/AI-ML options
+
+--Azure OpenAI (gives 200$ free credit)
+
+--Similarly spin up AWS options.
+
+
+
+
+
+
